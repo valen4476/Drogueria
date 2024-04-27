@@ -37,5 +37,10 @@ public Collection<Producto> getListaProductos() {
     public boolean verificarProductoExiste(Producto producto) {
         return listaProductos != null && listaProductos.contains(producto);
     }
+      public void eliminarProducto(Producto producto){
+        if(producto != null){
+            listaProductos.remove(producto);
+        }
+    }
 }
 
